@@ -62,7 +62,7 @@ function format_stats(){
 	awk NF |\
 	sort | \
 	uniq -c |\
-	sort
+	sort -n 
 }
 function calculate_stats(){
 	# Estado 
@@ -112,7 +112,7 @@ function calculate_stats(){
 	
 }
 
-load_data
-clean_data
+#load_data
+#clean_data
 calculate_stats
 
