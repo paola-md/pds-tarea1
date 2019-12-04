@@ -16,7 +16,12 @@ function extract_table() {
 }
 function load_data() {
 	touch ./../temp/extracted
-    for url in "${BASE_URL}"{2019}{01..02}".html"
+    for url in "${BASE_URL}"{1990..2018}{01..12}".html"
+    do
+        echo ${url}
+        curl -k ${url}  | extract_table 
+    done
+	for url in "${BASE_URL}"{2019}{01..10}".html"
     do
         echo ${url}
         curl -k ${url}  | extract_table 
