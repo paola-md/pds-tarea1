@@ -13,5 +13,7 @@
     
     
 ## Instrucciones
-1. Clonar el repositorio
-2. Ejecutar RUNME.sh en la carpeta de códigos.
+1. Clonar el repositorio en Vagrant
+2. Cambiar permisos para poder instalar librarias en R
+ * chmod 777 /usr/local/lib/R/site-library
+3. Ejecutar RUNME.sh en la carpeta de códigos.
