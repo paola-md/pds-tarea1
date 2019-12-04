@@ -1,23 +1,24 @@
 count color
       1 maroon
       1 navy
+      1 tan
       1 teal
-      2 tan
+      1 violet
+      3 lime
       4 turquoise
-      6 lime
-     10 brown
+      9 brown
+     10 pink
      11 multicolored
      12 purple
-     14 pink
-     23 gray
-     28 grey
-     64 reddish
-    111 silver
-    134 colored
-    152 black
-    162 yellow
-    279 blue
-    344 green
-    780 red
-   1023 white
-   1040 orange
+     21 gray
+     23 grey
+     56 reddish
+     80 silver
+    116 colored
+    121 black
+    130 yellow
+    243 blue
+    289 green
+    706 red
+    872 white
+   1021 orange
