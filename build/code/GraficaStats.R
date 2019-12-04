@@ -3,18 +3,18 @@
 instalar <- function(paquete) {
   
   if (!require(paquete,character.only = TRUE, quietly = TRUE, warn.conflicts = FALSE)) {
-    install.packages(as.character(paquete), dependecies = TRUE, repos = "http://cran.us.r-project.org")
-    library(paquete, character.only = TRUE, quietly = TRUE, warn.conflicts = FALSE)
+    install.packages(as.character(paquete), dependecies = TRUE, repos = 'http://cran.rstudio.com/')
+    library(paquete, character.only = TRUE, quietly = TRUE, warn.conflicts = FALSE,
+	    lib= "/usr/local/lib/R/site-library/")
   }
 }
 
-paquetes <- c('magrittr','dplyr', 'tidyr', 'readr',
-              'ggplot2', 'stringr')
+paquetes <- c( 'readr', 'ggplot2', 'stringr')
 
 lapply(paquetes, instalar)
 
 # ================= Funciones ================= 
-setwd(getSrcDirectory()[1]) #En bash
+setwd("/home/vagrant/pds-tarea1/build/code/") #En bash
 RESULTS <- "./../results/"
 #setwd(dirname(rstudioapi::getActiveDocumentContext()$path)) #En RStudio
 

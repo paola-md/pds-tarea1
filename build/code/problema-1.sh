@@ -7,6 +7,6 @@ awk '{print tolower($0)}' | \
 gawk -v RS='[^[:alpha:]]+' '{print}' | \
 sort | \
 uniq -c | \
-sort -r | \
+sort -n -r | \
 head -n 10 > ./../results/freq_palabras
 cat ./../results/freq_palabras

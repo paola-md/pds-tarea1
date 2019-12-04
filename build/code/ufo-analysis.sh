@@ -15,7 +15,6 @@ function extract_table() {
 	concat_data
 }
 function load_data() {
-	rm ./../temp/extracted 
 	touch ./../temp/extracted
     for url in "${BASE_URL}"{2019}{01..02}".html"
     do
@@ -27,7 +26,6 @@ function load_data() {
 function clean_data(){
 	COUNTER=1
 	echo "|Date / Time|City|State|Shape|Duration|Summary|Posted||||" > ./../temp/textfile
-	rm ./../temp/auxili
 	touch ./../temp/auxili
 	
 	while read -r line

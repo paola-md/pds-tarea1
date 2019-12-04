@@ -5,6 +5,6 @@ tail -n +2 |\
 awk NF |\
 sort | \
 uniq -c | \
-sort -r \
+sort -n -r \
 > ./../results/avistamientos_edo
 cat ./../results/avistamientos_edo
